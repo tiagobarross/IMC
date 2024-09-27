@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+  --dark-blue: #040924;
+  --white: #FFFFFF;
+  --input-bg: #DCE2E9;
+  --input-border: #b0b4b8;
+  --dark-cian: #0C3440;
+  --cian: #02799D;
+}
+
+body{
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  background: var(--dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main{
+  max-width: 42.8rem;
+  background: var(--white);
+  padding: 4.8rem 6.4rem 6.4rem;
+  border-radius: .6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  box-shadow: 0 .2rem .4rem rgba(0,0,0,0.1);
+}
+
+fieldset{
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+fieldset legend{
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: var(--dark-cian);
+  margin-bottom: 3.2rem;
+}
+
+.inputWrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.inputWrapper label{
+  font-size: 1.4rem;
+  color: var(--dark-cian);
+  margin-bottom: .8rem;
+}
+
+.inputWrapper input{
+  background: var(--input-hover);
+  border: 1px solid var(--input-border);
+}
