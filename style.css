@@ -44,6 +44,7 @@ fieldset{
 
 fieldset legend{
   font-size: 3.2rem;
+  line-height: 4rem;
   font-weight: bold;
   color: var(--dark-cian);
   margin-bottom: 3.2rem;
@@ -61,6 +62,71 @@ fieldset legend{
 }
 
 .inputWrapper input{
-  background: var(--input-hover);
+  width: 100%;
+  background: var(--input-bg);
   border: 1px solid var(--input-border);
+  border-radius: .4rem;
+  padding: 1.6rem;
+}
+
+.inputWrapper input:focus{
+  outline: 2px solid var(--cian);
+}
+
+form button{
+  margin: 3.2rem auto 0 auto;
+  padding: 1.6rem;
+  border: none;
+  background: var(--cian);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+  font-weight: bold;
+  border-radius: .4rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: .5s;
+}
+
+form button:hover{
+  background: #025c77;
+}
+
+/*modal*/
+.modalWrapper{
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  background: rgba(0,0,0,0.7);
+  opacity: 0;
+  visibility: 0;
+}
+
+.modalWrapper.open{
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal{
+  background: var(--white);
+  border-radius: .6rem;
+  padding: 4.8rem;
+  position: relative;
+}
+
+.modal button{
+  background: none;
+  border: none;
+  top: 1.6rem;
+  right: 1.6rem;
+  position: absolute;
+  cursor: pointer;
+  transition: transform .5s;
+}
+
+.modal button:hover{
+  transform: scale(1.1);
 }

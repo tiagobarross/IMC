@@ -16,16 +16,27 @@
       <fieldset>
         <legend>Cálculo de IMC</legend>
         <div class="inputWrapper">
-          <label for="">Peso (kg)</label>
-          <input type="number" id="weight" required/>
+          <label for="weight">Peso (kg)</label>
+          <input type="number" id="weight" placeholder="60" required/>
         </div>
         <div class="inputWrapper">
-          <label for="">Altura (cm)</label>
-          <input type="number" id="height" required/>
+          <label for="height">Altura (cm)</label>
+          <input type="number" id="height" placeholder="165" required/>
         </div>
       </fieldset>
+      <button>
+        Calcular IMC
+        <img src="./assets/arrow-up-right.svg" alt="">
+      </button>
     </form>
-    <button>Calcular IMC</button>
+    <div class="modalWrapper">
+        <div class="modal card">
+          <h2>
+            <button class="close"><img src="./assets/close.svg" alt=""></button>
+            Seu IMC é 28
+          </h2>
+        </div>
+    </div>
   </main>
 </body>
 </html>
