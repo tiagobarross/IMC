@@ -6,6 +6,7 @@
 
 :root{
   font-size: 62.5%;
+  --red: #F03E3E;
   --dark-blue: #040924;
   --white: #FFFFFF;
   --input-bg: #DCE2E9;
@@ -101,13 +102,10 @@ form button:hover{
   display: grid;
   place-content: center;
   background: rgba(0,0,0,0.7);
-  opacity: 0;
-  visibility: 0;
 }
 
-.modalWrapper.open{
-  opacity: 1;
-  visibility: visible;
+.modalWrapper.hide{
+  display: none;
 }
 
 .modal{
@@ -129,4 +127,28 @@ form button:hover{
 
 .modal button:hover{
   transform: scale(1.1);
+}
+
+.alertError {
+  position: absolute;
+  background-color: var(--red);
+  right: 0;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: .8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: var(--white);
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: transform 0.5s, opacity 0.5s;
+  transition-delay: 0s, 0s; 
+}
+
+.alertError.open {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
