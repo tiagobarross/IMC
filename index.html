@@ -8,13 +8,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <script src="script.js" defer></script>
+  <script src="./js/script.js" type="module" defer></script>
 </head>
 <body>
   <div class="alertError">
     Digite somente números
   </div>
-
   <div class="modalWrapper hide">
     <div class="modal card">
       <h2>
@@ -23,18 +22,17 @@
       </h2>
     </div>
   </div>
-
   <main>
     <form action="">
       <fieldset>
         <legend>Cálculo de IMC</legend>
         <div class="inputWrapper">
           <label for="weight">Peso (kg)</label>
-          <input type="text" id="weight" placeholder="60" required/>
+          <input type="text" id="weight" placeholder="60"/>
         </div>
         <div class="inputWrapper">
           <label for="height">Altura (cm)</label>
-          <input type="text" id="height" placeholder="165" required/>
+          <input type="text" id="height" placeholder="165"/>
         </div>
       </fieldset>
       <button>
